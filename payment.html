@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="./booking.html">booking</a></li>
+                <li><a class="nav-link" href="./customers.html">customers</a></li>
+                <li><a class="nav-link" href="./employees.html">employees</a></li>
+                <li><a class="nav-link" href="./rooms.html">rooms</a></li>
+                <li><a class="nav-link  current" href="./payment.html">payment</a></li>
+            </ul>
+            <button type="button" class="button">log out</button>
+        </nav>
+        <form class="form-search">
+            <input type="text" name="searchQuery" placeholder="Search" />
+            <button type="submit" class="button">
+                search
+            </button>
+        </form>
+    </header>
+    <section class="section">
+        <div class=" tabl">
+
+            <form class="form">
+                <label>
+                    payment_id
+                    <input type="id" name="payment" />
+                </label>
+                <label>
+                    date_of_payment
+                    <input type="date" name="date_of_payment" />
+                </label>
+                <label>
+                    amount
+                    <input type="number" name="amount" />
+                </label>
+                <label>
+                    booking_id
+                    <input type="id" name="booking_id" />
+                </label>
+
+                <div class="button-form">
+                    <button type="button">add</button>
+                    <button type="button">update</button>
+                    <button type="button">delete</button>
+                </div>
+            </form>
+
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>date</th>
+                        <th>amount</th>
+                        <th>booking_id</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>15.01.2023</td>
+                        <td>28000</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>01.04.2023</td>
+                        <td>49000</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>15.04.2023</td>
+                        <td>35000</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+
+</html>

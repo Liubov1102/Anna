@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+
+</head>
+
+<body>
+    <header class="header">
+            <nav class="nav">
+                <div class="logo">
+                </div>
+                <ul class="nav-menu">
+                    <li><a class="nav-link " href="./booking.html">booking</a></li>
+                    <li><a class="nav-link current" href="./customers.html">customers</a></li>
+                    <li><a class="nav-link" href="./employees.html">employees</a></li>
+                    <li><a class="nav-link" href="./rooms.html">rooms</a></li>
+                    <li><a class="nav-link" href="./payment.html">payment</a></li>
+                </ul>
+                <button type="button" class="button">log out</button>
+            </nav>
+            <form class="form-search">
+                <input type="text" name="searchQuery" placeholder="Search" />
+                <button type="submit" class="button">
+                    search
+                </button>
+            </form>
+    </header>
+    <section class="section">
+        <div class=" tabl">
+
+            <form class="form">
+                <label>
+                    customer_id
+                    <input type="id" name="customer" />
+                </label>
+                <label>
+                    first_name
+                    <input type="text" name="first_name" />
+                </label>
+                <label>
+                    last_name
+                    <input type="text" name="last_name" />
+                </label>
+                <label>
+                    gender
+                    <input type="text" name="gender" />
+                </label>
+                <label>
+                    phone_number
+                    <input type="tel" name="number" />
+                </label>
+                <label>
+                    email
+                    <input type="email" name="email" />
+                </label>
+                <div class="button-form">
+                    <button type="button">add</button>
+                    <button type="button">update</button>
+                    <button type="button">delete</button>
+                </div>
+            </form>
+
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>first_name</th>
+                        <th>last_name</th>
+                        <th>gender</th>
+                        <th>phone_number</th>
+                        <th>email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Деніс</td>
+                        <td>Захарченко</td>
+                        <td>ч</td>
+                        <td>+380972653410</td>
+                        <td>zaharchenko@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Іріна</td>
+                        <td>Шадріна</td>
+                        <td>ж</td>
+                        <td>+380639436108</td>
+                        <td>shadrina@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Андрій</td>
+                        <td>Шевченко</td>
+                        <td>ч</td>
+                        <td>+380937419805</td>
+                        <td>shev@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+
+</html>

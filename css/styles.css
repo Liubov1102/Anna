@@ -1,0 +1,247 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+html {
+  box-sizing: border-box;
+  background-color: rgb(193, 192, 192);
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.section{
+
+  padding: 30px;
+}
+.header{
+  padding: 20px;
+}
+.nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font: inherit;
+  font-weight: 400;
+  font-size: 16px;
+}
+.nav-menu{
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  text-decoration: none;
+}
+.nav-link{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2a2a2a;
+}
+.nav-link.current{
+  color: #d30f0f;
+}
+.title{
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #2a2a2a;
+  margin: 0;
+}
+.login-form {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #2a2a2a;
+  margin-top: 16px;
+  margin-bottom: 16px;
+ }
+.login-form input{
+  background: #E9ECE0;
+  border: none;
+  font: inherit;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+.login-form button {
+  width: 100%;
+  padding: 4px;
+  font: inherit;
+  background: #5B6460; 
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 16px;
+  display: block;
+  color: #fff;
+  border-radius: 4px;  
+  font-weight: 400;
+  font-size: 16px;
+  box-shadow: 4px 4px 10px 0 rgb(37 38 50 / 70%); 
+}
+.menu {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.menu-item {
+  position: relative;
+  outline: none;
+}
+.menu-item:hover .submenu {
+  display: block;
+}
+.menu-item:hover .menu-link {
+  background-color: #5B6460;
+  color: #fff;
+}
+.menu-link {
+  display: block;
+  font: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #E9ECE0;
+  color: #2a2a2a;
+  border-radius: 4px;
+  margin-right: 25px;
+}
+/* .submenu {
+  position: absolute;
+  width: 65%;  
+  padding: 10px;
+  list-style: none;  
+  background-color: #E9ECE0;
+  display: none;
+}
+.submenu-item{
+  font: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 8px;
+  margin-top: 4px;  
+}
+.submenu-link{
+text-decoration: none;
+color: #2a2a2a;
+} */
+.form{
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.form label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #2a2a2a;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.form input {
+  background: #E9ECE0;
+  border: none;
+  font: inherit;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.form button{
+  width: 100%;
+  font: inherit;
+  background: #5B6460; 
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 16px;
+  display: block;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  box-shadow: 4px 4px 10px 0 rgb(37 38 50 / 70%);
+}
+
+.button-form{
+  display: flex;
+  gap: 10px;
+}
+.tabl{
+  display: flex;
+  justify-content: center;
+
+}
+table {
+  border-collapse: collapse;
+}
+table th,
+table td {
+  height: 10px;
+  padding: 10px;
+  border: 1px solid #2a2a2a;
+}
+.logo{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-image: url('../images/antuanneta.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.button {
+  font: inherit;
+  background: #5B6460; 
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px;
+  display: block;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  box-shadow: 4px 4px 10px 0 rgb(37 38 50 / 70%);
+}
+.button:hover,
+.button:focus  {
+  box-shadow: none;
+ }
+ .form-search{
+  width: 360px;
+  display: flex;
+  margin-left: auto;
+ }
+.form-search input {
+  background: #E9ECE0;
+  border: none;
+  font: inherit;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  
+}

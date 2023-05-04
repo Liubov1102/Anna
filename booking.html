@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a class="nav-link current" href="./booking.html">booking</a></li>
+                <li><a class="nav-link" href="./customers.html">customers</a></li>
+                <li><a class="nav-link" href="./employees.html">employees</a></li>
+                <li><a class="nav-link" href="./rooms.html">rooms</a></li>
+                <li><a class="nav-link" href="./payment.html">payment</a></li>
+            </ul>
+            <button type="button" class="button">log out</button>
+        </nav>
+                    <form class="form-search">
+                        <input type="text" name="searchQuery" placeholder="Search" />
+                        <button type="submit" class="button">
+                            search
+                        </button>
+                    </form>
+    </header>
+    <section class="section">
+
+<div class=" tabl">
+
+    <form class="form">
+        <label>
+            booking_id
+            <input type="id" name="booking" />
+        </label>
+        <label>
+            customer
+            <input type="id" name="customer" />
+        </label>
+        <label>
+            room
+            <input type="id" name="room" />
+        </label>
+        <label>
+            date_in
+            <input type="date" name="date_in" />
+        </label>
+        <label>
+            date_out
+            <input type="date" name="date_out" />
+        </label>
+        <label>
+            count_of_days
+            <input type="number" name="count_of_days" />
+        </label>
+        <div class="button-form">
+        <button type="button">add</button>
+        <button type="button">update</button>
+        <button type="button">delete</button>
+    </div>
+    </form>
+
+
+<table>
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>customer</th>
+        <th>room</th>
+        <th>date_in</th>
+        <th>date_out</th>
+        <th>count_of_days</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>1</td>
+        <td>Андрій Шевченко</td>
+        <td>103</td>
+        <td>15.03.2023</td>
+        <td>29.03.2023</td>
+        <td>14</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Деніс Захарченко</td>
+        <td>202</td>
+        <td>01.04.2023</td>
+        <td>08.04.2023</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Іріна Шадріна</td>
+        <td>304</td>
+        <td>15.04.2023</td>
+        <td>20.04.2023</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </tbody>
+</table>
+
+
+</div>
+    </section>
+</body>
+</html>

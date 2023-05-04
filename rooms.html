@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="./booking.html">booking</a></li>
+                <li><a class="nav-link" href="./customers.html">customers</a></li>
+                <li><a class="nav-link" href="./employees.html">employees</a></li>
+                <li><a class="nav-link  current" href="./rooms.html">rooms</a></li>
+                <li><a class="nav-link" href="./payment.html">payment</a></li>
+            </ul>
+            <button type="button" class="button">log out</button>
+        </nav>
+        <form class="form-search">
+            <input type="text" name="searchQuery" placeholder="Search" />
+            <button type="submit" class="button">
+                search
+            </button>
+        </form>
+    </header>
+    <section class="section">
+        <div class=" tabl">
+
+            <form class="form">
+                <label>
+                    rooms_id
+                    <input type="id" name="rooms" />
+                </label>
+                <label>
+                    number_room
+                    <input type="number" name="number" />
+                </label>
+                <label>
+                    price
+                    <input type="number" name="price" />
+                </label>
+                <label>
+                    room_type_id
+                    <input type="text" name="room_type" />
+                </label>
+                <label>
+                    id_cleanliness
+                    <input type="text" name="id_cleanliness" />
+                </label>
+                <label>
+                    id_busyness
+                    <input type="text" name="id_busyness" />
+                </label>
+                <div class="button-form">
+                    <button type="button">add</button>
+                    <button type="button">update</button>
+                    <button type="button">delete</button>
+                </div>
+            </form>
+
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>number</th>
+                        <th>price</th>
+                        <th>room_type</th>
+                        <th>cleanliness</th>
+                        <th>busyness</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>101</td>
+                        <td>1500</td>
+                        <td>Одномісний Звичайний</td>
+                        <td>Чисто</td>
+                        <td>Вільна</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>102</td>
+                        <td>5000</td>
+                        <td>Одномісний Люкс</td>
+                        <td>Брудно</td>
+                        <td>Вільна</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>103</td>
+                        <td>2000</td>
+                        <td>Двомісний Звичайний</td>
+                        <td>Чисто</td>
+                        <td>Заброньована</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>104</td>
+                        <td>6000</td>
+                        <td>Двомісний Люкс</td>
+                        <td>Брудно</td>
+                        <td>Вільна</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>201</td>
+                        <td>2500</td>
+                        <td>Тримісний Звичайний</td>
+                        <td>Чисто</td>
+                        <td>Вільна</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>202</td>
+                        <td>7000</td>
+                        <td>Тримісний Люкс</td>
+                        <td>Чисто</td>
+                        <td>Заброньована</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>203</td>
+                        <td>1500</td>
+                        <td>Одномісний Звичайний</td>
+                        <td>Чисто</td>
+                        <td>Вільна</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>204</td>
+                        <td>5000</td>
+                        <td>Одномісний Люкс</td>
+                        <td>Чисто</td>
+                        <td>Вільна</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>301</td>
+                        <td>2000</td>
+                        <td>Двомісний Звичайний</td>
+                        <td>Чисто</td>
+                        <td>Вільна</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>302</td>
+                        <td>6000</td>
+                        <td>Двомісний Люкс</td>
+                        <td>Брудно</td>
+                        <td>Вільна</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>303</td>
+                        <td>2500</td>
+                        <td>Тримісний Звичайний</td>
+                        <td>Брудно</td>
+                        <td>Вільна</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>304</td>
+                        <td>7000</td>
+                        <td>Тримісний Люкс</td>
+                        <td>Чисто</td>
+                        <td>Заброньована</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>401</td>
+                        <td>1500</td>
+                        <td>Одномісний Звичайний</td>
+                        <td>Чисто</td>
+                        <td>Вільна</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>402</td>
+                        <td>5000</td>
+                        <td>Одномісний Люкс</td>
+                        <td>Чисто</td>
+                        <td>Вільна</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>403</td>
+                        <td>2000</td>
+                        <td>Двомісний Звичайний</td>
+                        <td>Брудно</td>
+                        <td>Вільна</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>404</td>
+                        <td>6000</td>
+                        <td>Двомісний Люкс</td>
+                        <td>Чисто</td>
+                        <td>Вільна</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>501</td>
+                        <td>2500</td>
+                        <td>Тримісний Звичайний</td>
+                        <td>Чисто</td>
+                        <td>Вільна</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>502</td>
+                        <td>7000</td>
+                        <td>Тримісний Люкс</td>
+                        <td>Чисто</td>
+                        <td>Вільна</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>503</td>
+                        <td>2000</td>
+                        <td>Двомісний Звичайний</td>
+                        <td>Брудно</td>
+                        <td>Вільна</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>504</td>
+                        <td>2500</td>
+                        <td>Тримісний Звичайний</td>
+                        <td>Брудно</td>
+                        <td>Вільна</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+    </section>
+</body>
+
+</html>
