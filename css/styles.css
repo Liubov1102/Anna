@@ -1,10 +1,21 @@
 body {
   font-family: Roboto, sans-serif;
+ 
+  background-image: linear-gradient(rgba(255, 255, 255, 0.75),rgba(255, 255, 255, 0.75)), url('../images/beach.png');
+  
+  background-size: cover;
+
 }
 html {
   box-sizing: border-box;
-  background-color: rgb(193, 192, 192);
+ 
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
   padding: 0;
   margin: 0;
@@ -17,7 +28,7 @@ html {
 }
 .section{
 
-  padding: 30px;
+  padding: 0 30px;
 }
 .header{
   padding: 20px;
@@ -26,13 +37,14 @@ html {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font: inherit;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
+  letter-spacing: 0.06em;
 }
 .nav-menu{
   display: flex;
   gap: 30px;
+  padding: 0;
   list-style: none;
   text-decoration: none;
 }
@@ -46,10 +58,12 @@ html {
 }
 .title{
   text-align: center;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
   color: #2a2a2a;
-  margin: 0;
 }
 .login-form {
   max-width: 360px;
@@ -63,41 +77,47 @@ html {
   flex-direction: column;
   justify-content: center;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: 0.06em;
   color: #2a2a2a;
   margin-top: 16px;
   margin-bottom: 16px;
+  
  }
 .login-form input{
   background: #E9ECE0;
-  border: none;
   font: inherit;
   font-size: 16px;
   padding: 8px;
   border-radius: 4px;
   margin-top: 4px;
+  outline: none;
+  border: 2px solid #0A6C6D;
 }
 .login-form button {
-  width: 100%;
-  padding: 4px;
-  font: inherit;
-  background: #5B6460; 
-  border: none;
+  background: #0A6C6D; 
+  border: #0A6C6D;
   text-transform: uppercase;
   cursor: pointer;
   padding: 10px;
-  margin-top: 16px;
+  margin-top: 24px;
   display: block;
   color: #fff;
   border-radius: 4px;  
   font-weight: 400;
   font-size: 16px;
+  letter-spacing: 0.08em;
   box-shadow: 4px 4px 10px 0 rgb(37 38 50 / 70%); 
+}
+.login-form button:hover,
+.login-form button:focus{
+  box-shadow:none;
 }
 .menu {
   display: flex;
   list-style: none;
   justify-content: center;
+  
 }
 .menu-item {
   position: relative;
@@ -107,12 +127,11 @@ html {
   display: block;
 }
 .menu-item:hover .menu-link {
-  background-color: #5B6460;
+  background-color: #0A6C6D;
   color: #fff;
 }
 .menu-link {
   display: block;
-  font: inherit;
   font-weight: 400;
   font-size: 16px;
   padding: 10px 20px;
@@ -153,31 +172,32 @@ color: #2a2a2a;
   flex-direction: column;
   justify-content: center;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: 0.06em;
   color: #2a2a2a;
-  margin-top: 16px;
+  /* margin-top: 16px; */
   margin-bottom: 16px;
 }
 
 .form input {
   background: #E9ECE0;
-  border: none;
   font: inherit;
   font-size: 16px;
   padding: 8px;
   border-radius: 4px;
   margin-top: 4px;
+  outline: none;
+  border: 2px solid #0A6C6D;
 }
 
 .form button{
   width: 100%;
-  font: inherit;
-  background: #5B6460; 
+  background: #0A6C6D; 
   border: none;
   text-transform: uppercase;
   cursor: pointer;
   padding: 10px;
-  margin-top: 16px;
+  /* margin-top: 16px; */
   display: block;
   color: #fff;
   border-radius: 4px;
@@ -189,6 +209,7 @@ color: #2a2a2a;
 .button-form{
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 .tabl{
   display: flex;
@@ -197,25 +218,78 @@ color: #2a2a2a;
 }
 table {
   border-collapse: collapse;
+  table-layout: fixed;
+  height: 100%;
+/* width: 1000px; */
+  margin-top: 38px;
+  margin-bottom: 30px;
+
 }
 table th,
-table td {
+table td
+{
   height: 10px;
   padding: 10px;
-  border: 1px solid #2a2a2a;
+border: 1px solid #2a2a2a;
 }
+.tabl-cel{
+  font: inherit;
+    border-left:1px solid transparent;
+    border-right: 1px solid transparent;
+}
+.tabl-bord{
+  font: inherit;
+  border-right: 1px solid #2a2a2a;
+}
+ .tabl-res {
+  font: inherit;
+  background-color: #09abae;
+  border: none;
+  border-top: 1px solid #2a2a2a;
+  border-bottom: 1px solid #2a2a2a;
+  text-align: center;
+}
+.tabl-set{
+  font: inherit;
+  background-color: rgb(240, 110, 110);
+  border: none;
+  border-top: 1px solid #2a2a2a;
+  border-bottom: 1px solid #2a2a2a;
+  text-align: center;
+  /* text-decoration: 3px underline ; */
+}
+.tabl-rem{
+  font: inherit;
+  background-color: #d6df78;
+  border: none;
+  border-top: 1px solid #2a2a2a;
+  border-bottom: 1px solid #2a2a2a;
+  border-right: 1px solid #2a2a2a;
+  text-align:center;
+}
+.tabl-d{
+  font-weight: 200;
+  color:rgb(67, 67, 67);
+}
+.paym{
+  border-top: 3px solid #2a2a2a;
+  border-bottom: 3px solid #2a2a2a;
+}
+/* table th:nth-child(1) {
+  width: 100%;
+} */
 .logo{
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background-image: url('../images/antuanneta.png');
+  background-image: url('../images/logo5.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 4px 4px 10px 0 rgb(37 38 50 / 70%);
 }
 .button {
-  font: inherit;
-  background: #5B6460; 
+  background: #0A6C6D; 
   border: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -235,13 +309,20 @@ table td {
   width: 360px;
   display: flex;
   margin-left: auto;
+  margin-top: -20px;
  }
 .form-search input {
   background: #E9ECE0;
   border: none;
-  font: inherit;
   font-size: 16px;
   padding: 8px;
   border-radius: 4px;
   
+}
+.form-client{
+  display: flex;
+  justify-content: space-around;
+}
+.foto-client img{
+  margin-bottom: 60px;
 }
