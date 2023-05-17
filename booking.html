@@ -23,9 +23,9 @@
                 <li><a class="nav-link" href="./client.html">client</a></li>
                 <li><a class="nav-link current" href="./booking.html">booking</a></li>
                 <li><a class="nav-link" href="./customers.html">customers</a></li>
-                <li><a class="nav-link" href="./employees.html">employees</a></li>
                 <li><a class="nav-link" href="./rooms.html">rooms</a></li>
                 <li><a class="nav-link" href="./payment.html">payment</a></li>
+
             </ul>
             <button type="button" class="button">log out</button>
         </nav>
@@ -42,50 +42,19 @@
    
     <form class="form">
 <label>
-    заказ №
-    <input type="text" name="" />
+    замовлення №
+    <input type="text" name="text" />
 </label>
         <label>
-            группа
-            <input type="text" name="" />
+            організація
+            <input type="text" name="name" />
         </label>
         <label>
-            фамилия
-            <input type="text" name="" />
+            основний гість
+            <input type="text" name="name" />
         </label>
-        <label>
-            имя
-            <input type="text" name="" />
-        </label>
-        <label>
-            отчество
-            <input type="text" name="" />
-        </label>
-        <label>
-            дата рождения
-            <input type="date" name="date" />
-        </label>
-        <label>
-            пол
-            <input type="text" name="gender" />
-        </label>
-<label>
-    гражданство
-    <input type="text" name="" />
-</label>
-
-<label>
-    тип документа
-    <input type="text" name="" />
-</label>
-<label>
-    номер документа
-    <input type="text" name="" />
-</label>
-<label>
-    адрес проживания
-    <input type="text" name="" />
-</label>
+      
+     
 <label>
     телефон
     <input type="tel" name="number" />
@@ -94,27 +63,94 @@
     email
     <input type="email" name="email" />
 </label>
-<div class="button-form">
-    <button class="button" type="button">add</button>
-    <button class="button" type="button">update</button>
-    <button class="button" type="button">delete</button>
-</div>
+<label>
+    додаткові гості
+    <input type="text" name="name" />
+</label>
+<label>
+
+    <input type="text" name="name" />
+</label>
+
+<label>
+
+    <input type="text" name="name" />
+</label>
+
+
     </form>
     <form class="form">
         <label>
-            дата заезда
+            дата заїзду
             <input type="date" name="date" />
         </label>
         <label>
-            дата выезда
+            дата виїзду
             <input type="date" name="date" />
         </label>
         <label>
-            колличество ночей
-            <input type="text" name="" />
+            кількість ночей
+            <input type="number" name="number" />
         </label>
+       <div style="display: flex; gap: 20px;">
+        <label >
+            дорослі
+            <input type="number" name="number" style="width: 150px;" />
+        </label>
+        <label>
+            діти
+            <input type="number" name="number" style="width: 150px;"/>
+        </label>
+       </div>
+        <label>
+            категорія
+            <select id="name" name="name">
+                <option selected>стандартний</option>
+                <option>сімейний</option>
+                <option>люкс</option>
+            </select>
+            
+        </label>
+        <label>
+            номер
+            <input type="text" name="text" />
+        </label>
+      
+        <label>
+            додаткові послуги
+            <select id="name" name="name">
+                <option selected >транспорт на вокзал</option>
+                <option>харчування</option>
+                <option>прання</option>
+            </select>
+        </label>
+       
+      
     </form>
-
+<form class="form">
+    <h2 style="font-weight: 300;">вартість</h2>
+    <label>
+        тариф
+        <input type="text" name="number" />
+    </label>
+    <label>
+        послуги
+        <input type="text" name="number" />
+    </label>
+    <label>
+        знижка
+        <input type="text" name="number" />
+    </label>
+    <label style="font-weight: 900;">
+        разом
+        <input type="text" name="" style="color: #f06e6e; border:2px solid #f06e6e;"/>
+    </label>
+</form>
+</div>
+<div class="button-form form" >
+    <button class="button" type="button">add</button>
+    <button class="button" type="button">update</button>
+    <button class="button" type="button">delete</button>
 </div>
 
 <!-- <div class=" tabl">
@@ -228,3 +264,20 @@
     </section>
 </body>
 </html>
+<!-- <span>
+    <label for="month">Month:</label>
+    <select id="month" name="month">
+        <option selected>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+    </select>
+</span> -->

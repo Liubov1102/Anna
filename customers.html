@@ -19,9 +19,10 @@
                 <div class="logo">
                 </div>
                 <ul class="nav-menu">
+                    <li><a class="nav-link" href="./calendar.html">calendar</a></li>
+                    <li><a class="nav-link" href="./client.html">client</a></li>
                     <li><a class="nav-link " href="./booking.html">booking</a></li>
                     <li><a class="nav-link current" href="./customers.html">customers</a></li>
-                    <li><a class="nav-link" href="./employees.html">employees</a></li>
                     <li><a class="nav-link" href="./rooms.html">rooms</a></li>
                     <li><a class="nav-link" href="./payment.html">payment</a></li>
                 </ul>
@@ -35,111 +36,173 @@
             </form>
     </header>
     <section class="section">
-        <div class=" tabl">
-
-            <form class="form">
-                <label>
-                    customer_id
-                    <input type="id" name="customer" />
-                </label>
-                <label>
-                    first_name
-                    <input type="text" name="first_name" />
-                </label>
-                <label>
-                    last_name
-                    <input type="text" name="last_name" />
-                </label>
-                <label>
-                    gender
-                    <input type="text" name="gender" />
-                </label>
-                <label>
-                    phone_number
-                    <input type="tel" name="number" />
-                </label>
-                <label>
-                    email
-                    <input type="email" name="email" />
-                </label>
-                <div class="button-form">
-                    <button type="button">add</button>
-                    <button type="button">update</button>
-                    <button type="button">delete</button>
-                </div>
-            </form>
-
 
             <table>
                 <thead>
                     <tr>
                         <th>id</th>
-                        <th>first_name</th>
-                        <th>last_name</th>
-                        <th>gender</th>
-                        <th>phone_number</th>
+                        <th>прізвище</th>
+                        <th>ім'я</th>
+                        <th>стать</th>
+                        <th>статус</th>
+                        <th>номер</th>
+                        <th>дата заїзду</th>
+                        <th>дата виїзду</th>
+                        <th>кіл. ноч</th>
+                        <th>дата народж.</th>
+                        <th>телефон</th>
                         <th>email</th>
+
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Деніс</td>
-                        <td>Захарченко</td>
+                        <td>Бочаров</td>
+                        <td>Володимир</td>
                         <td>ч</td>
-                        <td>+380972653410</td>
-                        <td>zaharchenko@gmail.com</td>
+                        <td class="tabl-set"></td>
+                        <td>102</td>
+                        <td>02.05.2023</td>
+                        <td>08.05.2023</td>
+                        <td>6</td>
+                        <td>15.02.1969</td>
+                        <td>+380675264871</td>
+                        <td>bocharov@gmail.com</td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Іріна</td>
-                        <td>Шадріна</td>
-                        <td>ж</td>
-                        <td>+380639436108</td>
-                        <td>shadrina@gmail.com</td>
+                        <td>Деркач</td>
+                        <td>Іван</td>
+                        <td>ч</td>
+                        <td class="tabl-set"></td>
+                        <td>301</td>
+                        <td>01.05.2023</td>
+                        <td>07.05.2023</td>
+                        <td>6</td>
+                        <td>16.05.1979</td>
+                        <td>+380963609015</td>
+                        <td>derkach@gmail.com</td>                       
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td>Андрій</td>
-                        <td>Шевченко</td>
+                        <td>Захаров</td>
+                        <td>Віктор</td>
                         <td>ч</td>
-                        <td>+380937419805</td>
-                        <td>shev@gmail.com</td>
+                        <td class="tabl-res"></td>
+                        <td>202</td>
+                        <td>12.05.2023</td>
+                        <td>15.05.2023</td>
+                        <td>3</td>
+                        <td>01.03.1982</td>
+                        <td>+380680023401</td>
+                        <td>zacharov@gmail.com</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>4</td>
+                        <td>Захарченко</td>
+                        <td>Деніс</td>
+                        <td>ч</td>
+                        <td class="tabl-set paym"></td>
+                        <td>101</td>
+                        <td>01.05.2023</td>
+                        <td>05.05.2023</td>
+                        <td>4</td>
+                        <td>18.01.2000</td>
+                        <td>+380972653410</td>
+                        <td>zaharchenko@gmail.com</td>                       
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>5</td>
+                        <td>Колесникова</td>
+                        <td>Олена</td>
+                        <td>ж</td>
+                        <td class="tabl-res"></td>
+                        <td>102</td>
+                        <td>15.05.2023</td>
+                        <td>19.05.2023</td>
+                        <td>4</td>
+                        <td>25.06.1980</td>
+                        <td>+380663695842</td>
+                        <td>kolesnikova@gmail.com</td>                        
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <td>6</td>
+                    <td>Максимова</td>
+                    <td>Жанна</td>
+                    <td>ж</td>
+                    <td class="tabl-res"></td>
+                    <td>201</td>
+                    <td>24.05.2023</td>
+                    <td>28.05.2023</td>
+                    <td>4</td>
+                    <td>13.04.1985</td>
+                    <td>+380933658412</td>
+                    <td>maksimova@gmail.com</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>7</td>
+                            <td>Миклушевский</td>
+                            <td>Кирило</td>
+                            <td>ч</td>
+                            <td class="tabl-res paym-res"></td>
+                            <td>201</td>
+                            <td>18.05.2023</td>
+                            <td>22.05.2023</td>
+                            <td>4</td>
+                            <td>02.11.1976</td>
+                            <td>+380684875269</td>
+                            <td>miklushev@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Тичина</td>
+                        <td>Антон</td>
+                        <td>ч</td>
+                        <td class="tabl-set paym"></td>
+                        <td>202</td>
+                        <td>01.05.2023</td>
+                        <td>05.05.2023</td>
+                        <td>4</td>
+                        <td>30.01.1990</td>
+                        <td>+380677771405</td>
+                        <td>tychina@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Чернобров</td>
+                        <td>Олексій</td>
+                        <td>ч</td>
+                        <td class="tabl-set"></td>
+                        <td>201</td>
+                        <td>04.05.2023</td>
+                        <td>10.05.2023</td>
+                        <td>6</td>
+                        <td>20.05.1989</td>
+                        <td>+380632565498</td>
+                        <td>chernobrov@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                    <td>Шадріна</td>
+                    <td>Іріна</td>
+                    <td>ж</td>
+                    <td class="tabl-res"></td>
+                    <td>101</td>
+                    <td>11.05.2023</td>
+                    <td>15.05.2023</td>
+                    <td>4</td>
+                    <td>14.03.1965</td>
+                    <td>+380639436108</td>
+                    <td>shadrina@gmail.com</td>
                     </tr>
                 </tbody>
             </table>
+        
+        <div class="button-form form" >
+            <button type="button">add</button>
+            <button type="button">update</button>
+            <button type="button">delete</button>
         </div>
     </section>
 </body>
