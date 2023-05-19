@@ -33,314 +33,259 @@
       </form>
     </header>
     <section class="section">
-      <div class="tabl">
-        <form class="form">
-          <label>
-            employees_id
-            <input type="id" name="employees" />
-          </label>
-          <label>
-            first_name
-            <input type="text" name="first_name" />
-          </label>
-          <label>
-            last_name
-            <input type="text" name="last_name" />
-          </label>
-          <label>
-            job_department
-            <input type="text" name="job_department" />
-          </label>
-          <label>
-            gender
-            <input type="text" name="gender" />
-          </label>
-          <label>
-            date_of_birth
-            <input type="date" name="date_of_birth" />
-          </label>
-          <label>
-            address
-            <input type="text" name="address" />
-          </label>
-          <label>
-            email
-            <input type="email" name="email" />
-          </label>
-          <label>
-            phone_number
-            <input type="tel" name="number" />
-          </label>
-          <label>
-            salary
-            <input type="number" name="salary" />
-          </label>
-          <div class="button-form">
-            <button type="button">add</button>
-            <button type="button">update</button>
-            <button type="button">delete</button>
-          </div>
-        </form>
+      <table>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>прізвище</th>
+            <th>ім'я</th>
+            <th>по-батькові</th>
+            <th>посада</th>
+            <th>стать</th>
+            <th>дата народ.</th>
+            <th>адреса проживання</th>
+            <th>email</th>
+            <th>телефон</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Матвеєва</td>
+            <td>Надія</td>
+            <td>Олександрівна</td>
+            <td>адміністратор</td>
+            <td>ж</td>
+            <td>03.12.1999</td>
+            <td>Троїцька 34 кв.2</td>
+            <td>matveeva@gmail.com</td>
+            <td>+380930267516</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Гордійчук</td>
+            <td>Сергій</td>
+            <td>Іванович</td>
+            <td>менеджер</td>
+            <td>ч</td>
+            <td>04.01.1975</td>
+            <td>Королева 97/1 кв.45</td>
+            <td>hordiychuk@gmail.com</td>
+            <td>+380632589510</td>
+          </tr>
 
-        <table>
-          <thead>
-            <tr>
-              <th>id</th>
-              <th>first_name</th>
-              <th>last_name</th>
-              <th>job_department</th>
-              <th>gen</th>
-              <th>date_of_birth</th>
-              <th>address</th>
-              <th>email</th>
-              <th>phone_number</th>
-              <th>salary</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Володимир</td>
-              <td>Бочаров</td>
-              <td>Директор</td>
-              <td>ч</td>
-              <td>15.02.1969</td>
-              <td>Грецька 71 кв.5</td>
-              <td>bocharov@gmail.com</td>
-              <td>+380675264871</td>
-              <td>80000</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Олександра</td>
-              <td>Шевченко</td>
-              <td>Ресепшіоніст</td>
-              <td>ж</td>
-              <td>15.12.1987</td>
-              <td>Ак. Вільямса 45 кв.6</td>
-              <td>shevchenko@gmail.com</td>
-              <td>+380972563695</td>
-              <td>15000</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Олена</td>
-              <td>Колесникова</td>
-              <td>Прибиральник</td>
-              <td>ж</td>
-              <td>25.06.1980</td>
-              <td>М Арнаутська 42 кв.45</td>
-              <td>kolesnikova@gmail.com</td>
-              <td>+380663695842</td>
-              <td>7500</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Олексій</td>
-              <td>Чернобров</td>
-              <td>Менеджер</td>
-              <td>ч</td>
-              <td>20.05.1989</td>
-              <td>Єврейська 57 кв.62</td>
-              <td>chernobrov@gmail.com</td>
-              <td>+380632565498</td>
-              <td>20000</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>Кирило</td>
-              <td>Миклушевский</td>
-              <td>Електрик</td>
-              <td>ч</td>
-              <td>02.11.1976</td>
-              <td>Долга 13</td>
-              <td>miklushev@gmail.com</td>
-              <td>+380684875269</td>
-              <td>12000</td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>Жанна</td>
-              <td>Максимова</td>
-              <td>Бухгалтер</td>
-              <td>ж</td>
-              <td>13.04.1985</td>
-              <td>Водопроводна 45 кв.4</td>
-              <td>maksimova@gmail.com</td>
-              <td>+380933658412</td>
-              <td>18000</td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>Антон</td>
-              <td>Тичина</td>
-              <td>Систадмін</td>
-              <td>ч</td>
-              <td>30.01.1990</td>
-              <td>Краснова 29</td>
-              <td>tychina@gmail.com</td>
-              <td>+380677771405</td>
-              <td>20000</td>
-            </tr>
-            <tr>
-              <td>8</td>
-              <td>Віктор</td>
-              <td>Захаров</td>
-              <td>Охоронець</td>
-              <td>ч</td>
-              <td>01.03.1982</td>
-              <td>Левітана 12 кв.1</td>
-              <td>zacharov@gmail.com</td>
-              <td>+380680023401</td>
-              <td>10000</td>
-            </tr>
-            <tr>
-              <td>9</td>
-              <td>Іван</td>
-              <td>Деркач</td>
-              <td>Технік</td>
-              <td>ч</td>
-              <td>16.05.1979</td>
-              <td>Ак. Корольова 98/3 кв.74</td>
-              <td>derkach@gmail.com</td>
-              <td>+380963609015</td>
-              <td>16000</td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <td>Сергій</td>
-              <td>Бабіч</td>
-              <td>Портьє</td>
-              <td>ч</td>
-              <td>07.09.1970</td>
-              <td>Толбухіна 37</td>
-              <td>babich@gmail.com</td>
-              <td>+380665569434</td>
-              <td>10000</td>
-            </tr>
-            <tr>
-              <td>11</td>
-              <td>Світлана</td>
-              <td>Велика</td>
-              <td>Секретар</td>
-              <td>ж</td>
-              <td>26.02.1980</td>
-              <td>Топольова 51</td>
-              <td>velyka@gmail.com</td>
-              <td>+380630377594</td>
-              <td>17000</td>
-            </tr>
-            <tr>
-              <td>12</td>
-              <td>Миколай</td>
-              <td>Лебедів</td>
-              <td>Сантехнік</td>
-              <td>ч</td>
-              <td>24.06.1974</td>
-              <td>Ак. Вільямса 98/2 кв.58</td>
-              <td>lebediv@gmail.com</td>
-              <td>+380636203699</td>
-              <td>13000</td>
-            </tr>
-            <tr>
-              <td>13</td>
-              <td>Андрій</td>
-              <td>Дарієнко</td>
-              <td>Ресепшіоніст</td>
-              <td>ч</td>
-              <td>12.10.1993</td>
-              <td>Канатна 101 кв.26</td>
-              <td>darienko@gmail.com</td>
-              <td>+380975501934</td>
-              <td>15000</td>
-            </tr>
-            <tr>
-              <td>14</td>
-              <td>Катерина</td>
-              <td>Ткач</td>
-              <td>Ресепшіоніст</td>
-              <td>ж</td>
-              <td>07.03.1995</td>
-              <td>В Арнаутська 23/1 кв.21</td>
-              <td>tkach@gmail.com</td>
-              <td>+380684563243</td>
-              <td>15000</td>
-            </tr>
-            <tr>
-              <td>15</td>
-              <td>Вероніка</td>
-              <td>Бобенко</td>
-              <td>Прибиральник</td>
-              <td>ж</td>
-              <td>20.03.1985</td>
-              <td>Рішельєвська 22 кв.34</td>
-              <td>bobenko@gmail.com</td>
-              <td>+380668965411</td>
-              <td>7500</td>
-            </tr>
-            <tr>
-              <td>16</td>
-              <td>Наталія</td>
-              <td>Ярошевська</td>
-              <td>Прибиральник</td>
-              <td>ж</td>
-              <td>16.04.1996</td>
-              <td>Французький бул. кв.22</td>
-              <td>yaroshevska@gmail.com</td>
-              <td>+380631472583</td>
-              <td>7500</td>
-            </tr>
-            <tr>
-              <td>17</td>
-              <td>Надія</td>
-              <td>Матвеєва</td>
-              <td>Прибиральник</td>
-              <td>ж</td>
-              <td>03.12.1999</td>
-              <td>Троїцька 34 кв.2</td>
-              <td>matveeva@gmail.com</td>
-              <td>+380930267516</td>
-              <td>7500</td>
-            </tr>
-            <tr>
-              <td>18</td>
-              <td>Сергій</td>
-              <td>Гордійчук</td>
-              <td>Портьє</td>
-              <td>ч</td>
-              <td>04.01.1975</td>
-              <td>Королева 97/1 кв.45</td>
-              <td>hordiychuk@gmail.com</td>
-              <td>+380632589510</td>
-              <td>10000</td>
-            </tr>
-            <tr>
-              <td>19</td>
-              <td>Михайло</td>
-              <td>Зеленський</td>
-              <td>Охоронець</td>
-              <td>ч</td>
-              <td>16.03.1979</td>
-              <td>Львовска 121 кв.12</td>
-              <td>zelenckyi@gmail.com</td>
-              <td>+380971596328</td>
-              <td>10000</td>
-            </tr>
-            <tr>
-              <td>20</td>
-              <td>Олександр</td>
-              <td>Шевчук</td>
-              <td>Бухгалтер</td>
-              <td>ч</td>
-              <td>08.08.1980</td>
-              <td>Ак. Глушка 11е кв.66</td>
-              <td>shevchuk@gmail.com</td>
-              <td>+380962684953</td>
-              <td>14000</td>
-            </tr>
-          </tbody>
-        </table>
+          <tr>
+            <td>3</td>
+            <td>Шевчук</td>
+            <td>Олександр</td>
+            <td>Володимирович</td>
+            <td>бухгалтер</td>
+            <td>ч</td>
+            <td>08.08.1980</td>
+            <td>Ак. Глушка 11е кв.66</td>
+            <td>shevchuk@gmail.com</td>
+            <td>+380962684953</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="button-form form">
+        <button type="button">додати</button>
+        <button type="button">оновити</button>
+        <button type="button">видалити</button>
       </div>
     </section>
   </body>
 </html>
+
+<!-- <tr>
+            <td>1</td>
+            <td>Володимир</td>
+            <td>Бочаров</td>
+            <td>Директор</td>
+            <td>ч</td>
+            <td>15.02.1969</td>
+            <td>Грецька 71 кв.5</td>
+            <td>bocharov@gmail.com</td>
+            <td>+380675264871</td>
+            <td>80000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Олександра</td>
+            <td>Шевченко</td>
+            <td>Ресепшіоніст</td>
+            <td>ж</td>
+            <td>15.12.1987</td>
+            <td>Ак. Вільямса 45 кв.6</td>
+            <td>shevchenko@gmail.com</td>
+            <td>+380972563695</td>
+            <td>15000</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Олена</td>
+            <td>Колесникова</td>
+            <td>Прибиральник</td>
+            <td>ж</td>
+            <td>25.06.1980</td>
+            <td>М Арнаутська 42 кв.45</td>
+            <td>kolesnikova@gmail.com</td>
+            <td>+380663695842</td>
+            <td>7500</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Олексій</td>
+            <td>Чернобров</td>
+            <td>Менеджер</td>
+            <td>ч</td>
+            <td>20.05.1989</td>
+            <td>Єврейська 57 кв.62</td>
+            <td>chernobrov@gmail.com</td>
+            <td>+380632565498</td>
+            <td>20000</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Кирило</td>
+            <td>Миклушевский</td>
+            <td>Електрик</td>
+            <td>ч</td>
+            <td>02.11.1976</td>
+            <td>Долга 13</td>
+            <td>miklushev@gmail.com</td>
+            <td>+380684875269</td>
+            <td>12000</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Жанна</td>
+            <td>Максимова</td>
+            <td>Бухгалтер</td>
+            <td>ж</td>
+            <td>13.04.1985</td>
+            <td>Водопроводна 45 кв.4</td>
+            <td>maksimova@gmail.com</td>
+            <td>+380933658412</td>
+            <td>18000</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Антон</td>
+            <td>Тичина</td>
+            <td>Систадмін</td>
+            <td>ч</td>
+            <td>30.01.1990</td>
+            <td>Краснова 29</td>
+            <td>tychina@gmail.com</td>
+            <td>+380677771405</td>
+            <td>20000</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Віктор</td>
+            <td>Захаров</td>
+            <td>Охоронець</td>
+            <td>ч</td>
+            <td>01.03.1982</td>
+            <td>Левітана 12 кв.1</td>
+            <td>zacharov@gmail.com</td>
+            <td>+380680023401</td>
+            <td>10000</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Іван</td>
+            <td>Деркач</td>
+            <td>Технік</td>
+            <td>ч</td>
+            <td>16.05.1979</td>
+            <td>Ак. Корольова 98/3 кв.74</td>
+            <td>derkach@gmail.com</td>
+            <td>+380963609015</td>
+            <td>16000</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Сергій</td>
+            <td>Бабіч</td>
+            <td>Портьє</td>
+            <td>ч</td>
+            <td>07.09.1970</td>
+            <td>Толбухіна 37</td>
+            <td>babich@gmail.com</td>
+            <td>+380665569434</td>
+            <td>10000</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Світлана</td>
+            <td>Велика</td>
+            <td>Секретар</td>
+            <td>ж</td>
+            <td>26.02.1980</td>
+            <td>Топольова 51</td>
+            <td>velyka@gmail.com</td>
+            <td>+380630377594</td>
+            <td>17000</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Миколай</td>
+            <td>Лебедів</td>
+            <td>Сантехнік</td>
+            <td>ч</td>
+            <td>24.06.1974</td>
+            <td>Ак. Вільямса 98/2 кв.58</td>
+            <td>lebediv@gmail.com</td>
+            <td>+380636203699</td>
+            <td>13000</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Андрій</td>
+            <td>Дарієнко</td>
+            <td>Ресепшіоніст</td>
+            <td>ч</td>
+            <td>12.10.1993</td>
+            <td>Канатна 101 кв.26</td>
+            <td>darienko@gmail.com</td>
+            <td>+380975501934</td>
+            <td>15000</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Катерина</td>
+            <td>Ткач</td>
+            <td>Ресепшіоніст</td>
+            <td>ж</td>
+            <td>07.03.1995</td>
+            <td>В Арнаутська 23/1 кв.21</td>
+            <td>tkach@gmail.com</td>
+            <td>+380684563243</td>
+            <td>15000</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Вероніка</td>
+            <td>Бобенко</td>
+            <td>Прибиральник</td>
+            <td>ж</td>
+            <td>20.03.1985</td>
+            <td>Рішельєвська 22 кв.34</td>
+            <td>bobenko@gmail.com</td>
+            <td>+380668965411</td>
+            <td>7500</td>
+          </tr>
+          <tr> -->
+<!-- <td>16</td>
+            <td>Наталія</td>
+            <td>Ярошевська</td>
+            <td>Прибиральник</td>
+            <td>ж</td>
+            <td>16.04.1996</td>
+            <td>Французький бул. кв.22</td>
+            <td>yaroshevska@gmail.com</td>
+            <td>+380631472583</td>
+            <td>7500</td>
+          </tr> -->
